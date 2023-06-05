@@ -1,6 +1,6 @@
-# chart-1
+# exportWidget
 
-Simple chart
+Export PDF / xlsx
 
 # Arrancar portal
 
