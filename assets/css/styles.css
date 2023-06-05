@@ -1,0 +1,41 @@
+  .graphic_container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #graphic_table {
+	  padding: 1rem 1rem 1rem 1rem;
+  }
+  
+  
+  .table,
+  .th,
+  .tr,
+  .td {
+    border: 1px solid;
+    width: 1%;
+  }
+  
+  .table {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    overflow-x: auto;
+    border-spacing: 0;
+  } 
+
+  /* Style buttons */
+  .graphic_btn {
+    background-color: DodgerBlue; /* Blue background */
+    background: url(../imgs/pie_chart_icon.png) no-repeat;
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 12px 16px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+  }
+
+  /* Darker background on mouse-over */
+  .graphic_btn:hover {
+    background-color: RoyalBlue;
+  }
