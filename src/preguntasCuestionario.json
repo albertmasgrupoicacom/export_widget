@@ -1,0 +1,379 @@
+{"success":true,
+"lista":[
+{"id":604188,
+"codigo":"A1",
+"titulo":"Valoración de la situación económica general de España",
+"series":[{"id":4473,"variable":"K.1.02.01.011","titulo":"VALORACIÓN DE LA SITUACIÓN ECONÓMICA ACTUAL DE ESPAÑA (CATALUÑA)"},{"id":3075,"variable":"K.1.02.01.001","titulo":"VALORACIÓN DE LA SITUACIÓN ECONÓMICA ACTUAL DE ESPAÑA (I) (NACIONAL)"}] 
+},
+{"id":604190,
+"codigo":"A2",
+"titulo":"Valoración retrospectiva de la situación económica de España (1 año)",
+"series":[{"id":2092,"variable":"K.1.02.02.002","titulo":"VALORACIÓN RETROSPECTIVA DE LA SITUACIÓN ECONÓMICA DE ESPAÑA (1 AÑO) (I)"}] 
+},
+{"id":604191,
+"codigo":"A3",
+"titulo":"Valoración prospectiva de la situación económica de España (1 año)",
+"series":[{"id":3076,"variable":"K.1.02.02.001","titulo":"VALORACIÓN PROSPECTIVA DE LA SITUACIÓN ECONÓMICA DE ESPAÑA (1 AÑO) (I)"}] 
+},
+{"id":604192,
+"codigo":"A4",
+"titulo":"Valoración de la situación económica personal actual",
+"series":[{"id":2464,"variable":"K.1.03.01.001","titulo":"VALORACIÓN DE LA SITUACIÓN ECONÓMICA PERSONAL ACTUAL"}] 
+},
+{"id":604193,
+"codigo":"A5",
+"titulo":"Valoración prospectiva de la situación económica personal (1 año)",
+"series":[{"id":2460,"variable":"K.1.03.02.001","titulo":"VALORACIÓN PROSPECTIVA DE LA SITUACIÓN ECONÓMICA PERSONAL (1 AÑO) (I)"}] 
+},
+{"id":604194,
+"codigo":"A6",
+"titulo":"Valoración de la situación política general de España",
+"series":[{"id":6166,"variable":"A.3.01.01.002","titulo":"VALORACIÓN DE LA SITUACIÓN POLÍTICA  ACTUAL DE ESPAÑA (I) (NACIONAL)"}] 
+},
+{"id":604195,
+"codigo":"A7",
+"titulo":"Valoración retrospectiva de la situación política de España (1 año)",
+"series":[{"id":2314,"variable":"A.3.01.02.002","titulo":"VALORACIÓN RETROSPECTIVA DE LA SITUACIÓN POLÍTICA DE ESPAÑA (1 AÑO) (I)"}] 
+},
+{"id":604196,
+"codigo":"A8",
+"titulo":"Valoración prospectiva de la situación política de España (1 año)",
+"series":[{"id":2388,"variable":"A.3.01.02.003","titulo":"VALORACIÓN PROSPECTIVA DE LA SITUACIÓN POLÍTICA DE ESPAÑA (1 AÑO) (I)"}] 
+},
+{"id":604197,
+"codigo":"A9",
+"titulo":"Problemas principales que existen actualmente en España (3) (ordinal)",
+"series":[] 
+},
+{"id":604189,
+"codigo":"A10",
+"titulo":"Problemas sociales que personalmente afectan más (3) (ordinal)",
+"series":[] 
+},
+{"id":604198,
+"codigo":"A11",
+"titulo":"Valoración de la gestión del Gobierno central de coalición del PSOE-Unidas Podemos",
+"series":[{"id":6839,"variable":"B.1.02.03.001","titulo":"VALORACIÓN DE LA GESTIÓN DEL GOBIERNO CENTRAL (NACIONAL)"}] 
+},
+{"id":604204,
+"codigo":"A12",
+"titulo":"Valoración de una posible gestión del Gobierno central si gobernase el PP, VOX, Ciudadanos o una coalición de los tres",
+"series":[{"id":15003,"variable":"A.4.04.01.015","titulo":"VALORACIÓN SOBRE SI CIUDADANOS REALIZARÍA UNA MEJOR GESTIÓN EN CASO DE QUE GOBERNARA"},{"id":3888,"variable":"A.4.04.01.011","titulo":"VALORACIÓN SOBRE SI EL PP REALIZARÍA UNA MEJOR GESTIÓN EN CASO DE QUE GOBERNARA"}] 
+},
+{"id":604199,
+"codigo":"A13",
+"titulo":"Escala de probabilidad (0-10) de votar a diferentes partidos políticos",
+"series":[{"id":12628,"variable":"A.4.05.01.187","titulo":"ESCALA DE PROBABILIDAD (0-10) DE VOTAR A UN DETERMINADO PARTIDO POLÍTICO: CIUDADANOS (NACIONAL)"},{"id":5613,"variable":"A.4.05.01.049","titulo":"ESCALA DE PROBABILIDAD (0-10) DE VOTAR A UN DETERMINADO PARTIDO POLÍTICO: IU (NACIONAL)"},{"id":12627,"variable":"A.4.05.01.186","titulo":"ESCALA DE PROBABILIDAD (0-10) DE VOTAR A UN DETERMINADO PARTIDO POLÍTICO: PODEMOS (NACIONAL)"},{"id":15357,"variable":"A.4.05.01.217","titulo":"ESCALA DE PROBABILIDAD (0-10) DE VOTAR A UN DETERMINADO PARTIDO POLÍTICO: PP (CATALUÑA)"},{"id":6532,"variable":"A.4.05.01.047","titulo":"ESCALA DE PROBABILIDAD (0-10) DE VOTAR A UN DETERMINADO PARTIDO POLÍTICO: PP (NACIONAL)"},{"id":5612,"variable":"A.4.05.01.048","titulo":"ESCALA DE PROBABILIDAD (0-10) DE VOTAR A UN DETERMINADO PARTIDO POLÍTICO: PSOE (NACIONAL)"},{"id":15353,"variable":"A.4.05.01.213","titulo":"ESCALA DE PROBABILIDAD (0-10) DE VOTAR A UN DETERMINADO PARTIDO POLÍTICO: PSOE/PSC (CATALUÑA)"},{"id":15006,"variable":"A.4.05.01.196","titulo":"ESCALA DE PROBABILIDAD (0-10) DE VOTAR A UN DETERMINADO PARTIDO POLÍTICO: VOX (NACIONAL)"}] 
+},
+{"id":604200,
+"codigo":"A14",
+"titulo":"Autodefinición de su ideología política",
+"series":[{"id":6354,"variable":"A.3.06.01.054","titulo":"AUTODEFINICIÓN DE SU IDEOLOGÍA POLÍTICA (III) (MV)"}] 
+},
+{"id":604201,
+"codigo":"A14a",
+"titulo":"Autodefinición de su ideología política (2ª opción)",
+"series":[] 
+},
+{"id":604202,
+"codigo":"A15",
+"titulo":"Definición de la ideología política de diferentes partidos políticos nacionales",
+"series":[{"id":15386,"variable":"A.4.02.01.213","titulo":"DEFINICIÓN IDEOLÓGICA DE PARTIDOS POLÍTICOS: CIUDADANOS"},{"id":15389,"variable":"A.4.02.01.216","titulo":"DEFINICIÓN IDEOLÓGICA DE PARTIDOS POLÍTICOS: IU"},{"id":15390,"variable":"A.4.02.01.217","titulo":"DEFINICIÓN IDEOLÓGICA DE PARTIDOS POLÍTICOS: MÁS PAÍS"},{"id":15388,"variable":"A.4.02.01.215","titulo":"DEFINICIÓN IDEOLÓGICA DE PARTIDOS POLÍTICOS: PODEMOS"},{"id":15385,"variable":"A.4.02.01.212","titulo":"DEFINICIÓN IDEOLÓGICA DE PARTIDOS POLÍTICOS: PP"},{"id":15384,"variable":"A.4.02.01.211","titulo":"DEFINICIÓN IDEOLÓGICA DE PARTIDOS POLÍTICOS: PSOE"},{"id":15387,"variable":"A.4.02.01.214","titulo":"DEFINICIÓN IDEOLÓGICA DE PARTIDOS POLÍTICOS: VOX"}] 
+},
+{"id":604203,
+"codigo":"A16",
+"titulo":"Escala de probabilidad (0-10) de votar en las próximas elecciones",
+"series":[{"id":15896,"variable":"B.6.06.01.049","titulo":"ESCALA DE PROBABILIDAD (0-10) DE VOTAR EN ELECCIONES GENERALES (NACIONAL)"}] 
+},
+{"id":604205,
+"codigo":"A17",
+"titulo":"Conocimiento y escala de valoración (1-10) de líderes políticos nacionales",
+"series":[{"id":15246,"variable":"A.5.01.01.127","titulo":"CONOCIMIENTO Y ESCALA DE VALORACIÓN (1-10) DE LÍDERES POLÍTICOS: ALBERTO GARZÓN (NACIONAL)"},{"id":15396,"variable":"A.5.01.01.131","titulo":"CONOCIMIENTO Y ESCALA DE VALORACIÓN (1-10) DE LÍDERES POLÍTICOS: IÑIGO ERREJÓN (NACIONAL)"},{"id":15245,"variable":"A.5.01.01.126","titulo":"CONOCIMIENTO Y ESCALA DE VALORACIÓN (1-10) DE LÍDERES POLÍTICOS: PABLO CASADO (NACIONAL)"},{"id":15244,"variable":"A.5.01.01.125","titulo":"CONOCIMIENTO Y ESCALA DE VALORACIÓN (1-10) DE LÍDERES POLÍTICOS: PABLO IGLESIAS (NACIONAL)"},{"id":15248,"variable":"A.5.01.01.129","titulo":"CONOCIMIENTO Y ESCALA DE VALORACIÓN (1-10) DE LÍDERES POLÍTICOS: PEDRO SÁNCHEZ (NACIONAL)"},{"id":15250,"variable":"A.5.01.01.130","titulo":"CONOCIMIENTO Y ESCALA DE VALORACIÓN (1-10) DE LÍDERES POLÍTICOS: SANTIAGO ABASCAL (NACIONAL)"}] 
+},
+{"id":604206,
+"codigo":"A18",
+"titulo":"Grado de confianza en el presidente del Gobierno central: Pedro Sánchez",
+"series":[{"id":14974,"variable":"B.1.01.03.022","titulo":"GRADO DE CONFIANZA EN EL PRESIDENTE DEL GOBIERNO: PEDRO SÁNCHEZ"}] 
+},
+{"id":604207,
+"codigo":"A19",
+"titulo":"Grado de confianza en el líder del principal partido de la oposición (PP): Pablo Casado",
+"series":[{"id":15007,"variable":"A.5.01.03.015","titulo":"GRADO DE CONFIANZA EN EL LÍDER DEL PP: PABLO CASADO"}] 
+},
+{"id":604208,
+"codigo":"A20",
+"titulo":"Preferencia personal como presidente del Gobierno central",
+"series":[{"id":15008,"variable":"A.5.01.02.011","titulo":"LÍDER PREFERIDO COMO PRESIDENTE DEL GOBIERNO"}] 
+},
+{"id":604209,
+"codigo":"A21",
+"titulo":"Conocimiento y escala de valoración (1-10) de los ministros del Gobierno de coalición PSOE-Unidas Podemos",
+"series":[] 
+},
+{"id":604210,
+"codigo":"B1",
+"titulo":"Conocimiento del coronavirus COVID-19",
+"series":[] 
+},
+{"id":604211,
+"codigo":"B2",
+"titulo":"Grado de interés por las noticias sobre el coronavirus COVID-19",
+"series":[] 
+},
+{"id":604212,
+"codigo":"B2a",
+"titulo":"Medios de seguimiento de las noticias sobre el coronavirus COVID-19",
+"series":[] 
+},
+{"id":604213,
+"codigo":"B2b",
+"titulo":"Grado de confianza en las noticias sobre el coronavirus COVID-19",
+"series":[] 
+},
+{"id":604214,
+"codigo":"B3",
+"titulo":"Grado de información sobre el coronavirus COVID-19",
+"series":[] 
+},
+{"id":604215,
+"codigo":"B401",
+"titulo":"Acuerdo sobre diferentes opiniones acerca del coronavirus COVID-19 (1ª parte)",
+"series":[] 
+},
+{"id":604216,
+"codigo":"B402",
+"titulo":"Acuerdo sobre diferentes opiniones acerca del coronavirus COVID-19 (2ª parte)",
+"series":[] 
+},
+{"id":604217,
+"codigo":"B5",
+"titulo":"Necesidad de mayor información sobre el coronavirus COVID-19 por parte del Gobierno",
+"series":[] 
+},
+{"id":604221,
+"codigo":"C1R",
+"titulo":"Intención de voto en supuestas elecciones generales [recodificada]",
+"series":[] 
+},
+{"id":604220,
+"codigo":"C1aR",
+"titulo":"Intención de voto alternativo en supuestas elecciones generales [recodificada]",
+"series":[] 
+},
+{"id":604224,
+"codigo":"C2R",
+"titulo":"Partido político por el que se siente más simpatía en las elecciones generales (con filtro) [recodificada]",
+"series":[] 
+},
+{"id":604223,
+"codigo":"C2a",
+"titulo":"Voto+simpatía en supuestas elecciones generales [recodificada]",
+"series":[] 
+},
+{"id":604225,
+"codigo":"C3",
+"titulo":"Escala de autoubicación ideológica (1-10)",
+"series":[{"id":2177,"variable":"A.3.06.01.013","titulo":"ESCALA DE AUTOUBICACIÓN IDEOLÓGICA (1-10) (CATALUÑA)"},{"id":5356,"variable":"A.3.06.01.004","titulo":"ESCALA DE AUTOUBICACIÓN IDEOLÓGICA (1-10) (I)"}] 
+},
+{"id":604226,
+"codigo":"C4",
+"titulo":"Escala de ubicación ideológica (1-10) de partidos políticos",
+"series":[{"id":12636,"variable":"A.4.02.01.194","titulo":"ESCALA DE UBICACIÓN IDEOLÓGICA (1-10) DE PARTIDOS POLÍTICOS: CIUDADANOS (NACIONAL)"},{"id":6009,"variable":"A.4.02.01.191","titulo":"ESCALA DE UBICACIÓN IDEOLÓGICA (1-10) DE PARTIDOS POLÍTICOS: Cs-CIUTADANS (CATALUÑA)"},{"id":5254,"variable":"A.4.02.01.064","titulo":"ESCALA DE UBICACIÓN IDEOLÓGICA (1-10) DE PARTIDOS POLÍTICOS: IU (NACIONAL)"},{"id":15399,"variable":"A.4.02.01.218","titulo":"ESCALA DE UBICACIÓN IDEOLÓGICA (1-10) DE PARTIDOS POLÍTICOS: MÁS PAÍS (NACIONAL)"},{"id":12635,"variable":"A.4.02.01.193","titulo":"ESCALA DE UBICACIÓN IDEOLÓGICA (1-10) DE PARTIDOS POLÍTICOS: PODEMOS (NACIONAL)"},{"id":5146,"variable":"A.4.02.01.049","titulo":"ESCALA DE UBICACIÓN IDEOLÓGICA (1-10) DE PARTIDOS POLÍTICOS: PP (AP) (CATALUÑA)"},{"id":5253,"variable":"A.4.02.01.063","titulo":"ESCALA DE UBICACIÓN IDEOLÓGICA (1-10) DE PARTIDOS POLÍTICOS: PP (NACIONAL)"},{"id":5166,"variable":"A.4.02.01.061","titulo":"ESCALA DE UBICACIÓN IDEOLÓGICA (1-10) DE PARTIDOS POLÍTICOS: PSOE (NACIONAL)"},{"id":5145,"variable":"A.4.02.01.048","titulo":"ESCALA DE UBICACIÓN IDEOLÓGICA (1-10) DE PARTIDOS POLÍTICOS: PSOE/PSC (CATALUÑA)"},{"id":15010,"variable":"A.4.02.01.208","titulo":"ESCALA DE UBICACIÓN IDEOLÓGICA (1-10) DE PARTIDOS POLÍTICOS: VOX (NACIONAL)"}] 
+},
+{"id":604227,
+"codigo":"C5",
+"titulo":"Escala de ubicación ideológica (1-10) de líderes políticos nacionales",
+"series":[{"id":15902,"variable":"A.5.01.03.020","titulo":"ESCALA DE UBICACIÓN IDEOLÓGICA (1-10) DE LÍDERES POLÍTICOS: ALBERTO GARZÓN (NACIONAL)"},{"id":15904,"variable":"A.5.01.03.022","titulo":"ESCALA DE UBICACIÓN IDEOLÓGICA (1-10) DE LÍDERES POLÍTICOS: ÍÑIGO ERREJÓN (NACIONAL)"},{"id":15899,"variable":"A.5.01.03.017","titulo":"ESCALA DE UBICACIÓN IDEOLÓGICA (1-10) DE LÍDERES POLÍTICOS: PABLO CASADO (NACIONAL)"},{"id":15901,"variable":"A.5.01.03.019","titulo":"ESCALA DE UBICACIÓN IDEOLÓGICA (1-10) DE LÍDERES POLÍTICOS: PABLO IGLESIAS (NACIONAL)"},{"id":15898,"variable":"A.5.01.03.016","titulo":"ESCALA DE UBICACIÓN IDEOLÓGICA (1-10) DE LÍDERES POLÍTICOS: PEDRO SÁNCHEZ (NACIONAL)"},{"id":15900,"variable":"A.5.01.03.018","titulo":"ESCALA DE UBICACIÓN IDEOLÓGICA (1-10) DE LÍDERES POLÍTICOS: SANTIAGO ABASCAL (NACIONAL)"}] 
+},
+{"id":604228,
+"codigo":"C6",
+"titulo":"Fidelidad de voto en elecciones",
+"series":[{"id":15011,"variable":"B.6.06.07.005","titulo":"FIDELIDAD DE VOTO AL MISMO PARTIDO EN ELECCIONES GENERALES"}] 
+},
+{"id":604229,
+"codigo":"C7",
+"titulo":"Participación electoral en las elecciones generales de noviembre de 2019",
+"series":[{"id":15242,"variable":"B.6.06.01.039","titulo":"PARTICIPACIÓN ELECTORAL EN LAS ELECCIONES GENERALES DE 2019"}] 
+},
+{"id":604232,
+"codigo":"C7aR",
+"titulo":"Recuerdo de voto en las elecciones generales de noviembre de 2019 de los votantes [recodificada]",
+"series":[] 
+},
+{"id":604231,
+"codigo":"C7aa",
+"titulo":"Recuerdo de voto en las elecciones generales de noviembre de 2019 [recodificada]",
+"series":[] 
+},
+{"id":604332,
+"codigo":"C8R",
+"titulo":"Partido político que considera más cercano a sus ideas en las elecciones generales de noviembre de 2019 [recodificada]",
+"series":[] 
+},
+{"id":604234,
+"codigo":"CX1",
+"titulo":"Valoración de la situación económica de la comunidad autónoma (Cataluña)",
+"series":[{"id":5187,"variable":"K.1.04.01.023","titulo":"VALORACIÓN DE LA SITUACIÓN ECONÓMICA ACTUAL DE LA COMUNIDAD AUTÓNOMA (CATALUÑA)"}] 
+},
+{"id":604235,
+"codigo":"CX2",
+"titulo":"Problemas principales que existen actualmente en Cataluña (2) (ordinal)",
+"series":[] 
+},
+{"id":604236,
+"codigo":"CX3",
+"titulo":"Valoración retrospectiva de la gestión del Gobierno autonómico de Cataluña (últimos años)",
+"series":[] 
+},
+{"id":604237,
+"codigo":"CX4",
+"titulo":"Valoración retrospectiva de la gestión como presidente autonómico de Cataluña de Joaquim Torra",
+"series":[] 
+},
+{"id":604238,
+"codigo":"CX5",
+"titulo":"Imagen de partidos políticos de Cataluña",
+"series":[] 
+},
+{"id":604241,
+"codigo":"CX6R",
+"titulo":"Intención de voto en supuestas elecciones autonómicas de Cataluña  [recodificada]",
+"series":[] 
+},
+{"id":604242,
+"codigo":"CX7R",
+"titulo":"Partido político por el que se siente más simpatía en las elecciones autonómicas (con filtro) [recodificada]",
+"series":[] 
+},
+{"id":604243,
+"codigo":"CX7aa",
+"titulo":"Voto+simpatía en las elecciones autonómicas de Cataluña [recodificada]",
+"series":[] 
+},
+{"id":604245,
+"codigo":"CX8R",
+"titulo":"Partido político que considera más cercano a sus ideas en las elecciones autonómicas de Cataluña [recodificada]",
+"series":[] 
+},
+{"id":604247,
+"codigo":"CX9R",
+"titulo":"Preferencia de partido político para gobernar en la comunidad autónoma (Cataluña) [recodificada]",
+"series":[] 
+},
+{"id":604248,
+"codigo":"CX10",
+"titulo":"Conocimiento y escala de valoración (1-10) de líderes políticos de Cataluña",
+"series":[] 
+},
+{"id":604249,
+"codigo":"CX11",
+"titulo":"Preferencia personal como presidente autonómico de Cataluña",
+"series":[] 
+},
+{"id":604338,
+"codigo":"CX11R",
+"titulo":"Preferencia personal como presidente autonómico de Cataluña [recodificada]",
+"series":[] 
+},
+{"id":604267,
+"codigo":"C9",
+"titulo":"Sexo de la persona entrevistada",
+"series":[] 
+},
+{"id":604250,
+"codigo":"C10",
+"titulo":"Edad de la persona entrevistada",
+"series":[] 
+},
+{"id":604251,
+"codigo":"C11",
+"titulo":"Escolarización de la persona entrevistada",
+"series":[{"id":12519,"variable":"D.1.02.04.014","titulo":"ESCOLARIZACIÓN DE LA PERSONA ENTREVISTADA"},{"id":4027,"variable":"D.1.02.04.009","titulo":"ESCOLARIZACIÓN DE LA PERSONA ENTREVISTADA (CATALUÑA)"}] 
+},
+{"id":604252,
+"codigo":"C11a",
+"titulo":"Nivel de estudios alcanzado por la persona entrevistada",
+"series":[{"id":14398,"variable":"D.1.02.04.029","titulo":"NIVEL DE ESTUDIOS DE LA PERSONA ENTREVISTADA (SOLO A QUIENES HAN IDO A LA ESCUELA)"}] 
+},
+{"id":604253,
+"codigo":"C11aa",
+"titulo":"Estudios de la persona entrevistada [recodificada]",
+"series":[{"id":15280,"variable":"D.1.02.04.038","titulo":"ESTUDIOS DE LA PERSONA ENTREVISTADA (RECODIFICADA) (CATALUÑA)"},{"id":14397,"variable":"D.1.02.04.028","titulo":"ESTUDIOS DE LA PERSONA ENTREVISTADA (RECODIFICADA) (I)"}] 
+},
+{"id":604254,
+"codigo":"C12",
+"titulo":"Religiosidad de la persona entrevistada",
+"series":[{"id":15294,"variable":"F.1.04.01.070","titulo":"RELIGIOSIDAD DE LA PERSONA ENTREVISTADA (IX)"}] 
+},
+{"id":604255,
+"codigo":"C12a",
+"titulo":"Frecuencia de asistencia a oficios religiosos",
+"series":[{"id":15292,"variable":"F.1.04.02.041","titulo":"FRECUENCIA DE ASISTENCIA A OFICIOS RELIGIOSOS (VI) (SÓLO A CATÓLICOS O CREYENTES DE OTRA RELIGIÓN)"}] 
+},
+{"id":604256,
+"codigo":"C13",
+"titulo":"Estado civil de la persona entrevistada",
+"series":[{"id":15443,"variable":"E.1.03.04.019","titulo":"ESTADO CIVIL DE LA PERSONA ENTREVISTADA (CATALUÑA)"},{"id":2037,"variable":"E.1.03.04.007","titulo":"ESTADO CIVIL DE LA PERSONA ENTREVISTADA (II)"}] 
+},
+{"id":604257,
+"codigo":"C13a",
+"titulo":"Situación personal de convivencia en pareja de las personas no casadas",
+"series":[{"id":12408,"variable":"E.1.03.02.001","titulo":"SITUACIÓN DE CONVIVENCIA DE LAS PERSONAS NO CASADAS (SÓLO A QUIENES NO ESTÁN CASADOS/AS )"}] 
+},
+{"id":604258,
+"codigo":"C14",
+"titulo":"Cabeza de familia",
+"series":[{"id":15479,"variable":"K.1.03.03.044","titulo":"PERSONA QUE APORTA MÁS INGRESOS AL HOGAR (CATALUÑA)"},{"id":12294,"variable":"K.1.03.03.017","titulo":"PERSONA QUE APORTA MÁS INGRESOS AL HOGAR (NACIONAL)"}] 
+},
+{"id":604259,
+"codigo":"C15",
+"titulo":"Situación laboral de la persona entrevistada",
+"series":[{"id":3094,"variable":"J.1.05.05.002","titulo":"SITUACIÓN LABORAL DE LA PERSONA ENTREVISTADA"},{"id":15142,"variable":"J.1.05.05.077","titulo":"SITUACIÓN LABORAL DE LA PERSONA ENTREVISTADA (CATALUÑA)"}] 
+},
+{"id":604260,
+"codigo":"C16",
+"titulo":"Ocupación de la persona entrevistada",
+"series":[] 
+},
+{"id":604261,
+"codigo":"C17",
+"titulo":"Situación profesional de la persona entrevistada",
+"series":[{"id":12552,"variable":"J.1.05.05.022","titulo":"SITUACIÓN PROFESIONAL DE LA PERSONA ENTREVISTADA"},{"id":15483,"variable":"J.1.05.05.080","titulo":"SITUACIÓN PROFESIONAL DE LA PERSONA ENTREVISTADA (CATALUÑA)"}] 
+},
+{"id":604262,
+"codigo":"C17a",
+"titulo":"Tipo de empresa u organización de la persona entrevistada",
+"series":[{"id":12554,"variable":"J.1.05.05.023","titulo":"TIPO DE EMPRESA U ORGANIZACIÓN DE LA PERSONA ENTREVISTADA (SÓLO A QUIENES ESTÁN ASALARIADOS) (Filtrada)"}] 
+},
+{"id":604264,
+"codigo":"C18",
+"titulo":"Rama de actividad de la persona entrevistada",
+"series":[] 
+},
+{"id":604697,
+"codigo":"C18a",
+"titulo":"Rama de actividad de la persona entrevistada [recodificada]",
+"series":[{"id":14399,"variable":"J.1.05.05.072","titulo":"RAMA DE ACTIVIDAD DE LA PERSONA ENTREVISTADA (CNAE-09)"}] 
+},
+{"id":604265,
+"codigo":"C19",
+"titulo":"Nivel de ingresos del hogar",
+"series":[{"id":13479,"variable":"K.1.03.03.040","titulo":"NIVEL DE INGRESOS DEL HOGAR (III)"}] 
+},
+{"id":604266,
+"codigo":"C20",
+"titulo":"Nivel de ingresos personales",
+"series":[{"id":4285,"variable":"K.1.03.03.007","titulo":"NIVEL DE INGRESOS PERSONALES"}] 
+},
+{"id":604333,
+"codigo":"C21",
+"titulo":"Clase social subjetiva de la persona entrevistada",
+"series":[] 
+},
+{"id":604334,
+"codigo":"C21a",
+"titulo":"Identificación subjetiva de clase [recodificada]",
+"series":[] 
+}],
+"info":null
+}

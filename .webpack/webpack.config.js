@@ -13,7 +13,7 @@ module.exports = {
 		openPage: '',
 		
 		proxy: {},
-		publicPath: '/o/chart-1/',
+		publicPath: '/o/exportWidget/',
 	},
 	plugins: [new require('copy-webpack-plugin')(['../assets'])],
 	module: {

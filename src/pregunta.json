@@ -1,0 +1,13 @@
+{"success":true,
+"ficha":{"id":634437,
+"id_cuestionario":17738,
+"id_estudio":14706,
+"codigo":"0001",
+"titulo":"Posicionamiento sobre el cambio horario",
+"texto":"\u003cp style\u003d\"text-align:justify\"\u003eEn Europa se viene debatiendo sobre la necesidad de acabar con el cambio de hora que se realiza dos veces al año (la última vez el fin de semana pasado). Ud. personalmente, \u0026iquest;preferiría que España acabase con el cambio de hora o seguir como hasta ahora, es decir, cambiando el horario en invierno y en verano?\u0026nbsp;\u003cbr /\u003e\r\n--\u003c/p\u003e\r\n\r\n\u003cp\u003e- Acabar con el cambio de hora\u003cbr /\u003e\r\n- Seguir como hasta ahora (cambiando de hora dos veces al año)\u003cbr /\u003e\r\n- \u003cstrong\u003e(NO LEER)\u003c/strong\u003e Le es indiferente\u003cbr /\u003e\r\n- N.S.\u003cbr /\u003e\r\n- N.C.\u003c/p\u003e",
+"texto_marginales":"",
+"descriptores":[{"codigo":"003_001_001","descriptor":"Ciencia espacial"},{"codigo":"006_001_004","descriptor":"Europa"}],
+"series":[{"id":17314,"variable":"M.1.01.01.003","titulo":"POSICIONAMIENTO SOBRE EL CAMBIO DE HORARIO"}] 
+},
+"info":null
+}
