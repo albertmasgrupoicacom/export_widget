@@ -306,6 +306,117 @@ class ExportDocument {
   }
 
 
+  // EXPORTACIÓN PDF
+
+    exportToPDF() {
+      const doc = new jsPDF();
+
+    //Logo
+    const logoWidth = 50;  
+    const logoHeight = 50; 
+    const logoX = 10;      
+    const logoY = 10;      
+    //const logoUrl = 'https://i.imgur.com/77syx2k.png';
+    const logoUrl = 'https://upload.wikimedia.org/wikipedia/commons/9/9d/Logotipo_del_CIS.png';
+    //const logoUrl = 'https://webserver-cis-dev.lfr.cloud/documents/d/cis/logo-cis';
+    doc.addImage(logoUrl, 'PNG', logoX, logoY, logoWidth, logoHeight);
+
+    //Estudios
+    const estudioData = [
+          ["Nº Estudio", this.estudioData.ficha.estudio.id],
+          ["Fecha", this.estudioData.ficha.estudio.fecha],
+          ["Título", this.estudioData.ficha.estudio.titulo],
+          ["Autor(es)", this.estudioData.ficha.estudio.autores],
+          ["Encargo(es)", this.estudioData.ficha.estudio.encargo],
+          ["País", this.estudioData.ficha.estudio.pais],
+          ["Índice Temático", this.estudioData.ficha.estudio.indiceTematico],
+      ];
+
+      doc.setFontSize(14);
+      doc.text("ESTUDIOS", 10, 70);
+      doc.autoTable({
+          startY: 80,
+          body: estudioData,
+          theme: "grid",
+      });
+
+    //Cuestionarios
+      doc.addPage();
+      doc.setFontSize(14);
+      doc.text("CUESTIONARIOS", 10, 10);
+      const cuestionarios = this.estudioData.ficha.cuestionarios;
+      cuestionarios.forEach((cuestionario, index) => {
+      const cuestionarioData = [
+          ["Nº Cuestionario", cuestionario.numero],
+          ["Título", cuestionario.titulo],
+          ["Fecha de inicio", cuestionario.fecha_inicio],
+          ["Fecha de finalización", cuestionario.fecha_fin],
+          ["Tipo de entrevista", cuestionario.tipo_entrevista],
+          ["Variables Sociodemográficas", cuestionario.variables_sociodemograficas],
+          ["Contenido", cuestionario.contenido]
+      ];
+
+      doc.autoTable({
+          startY: 20 + (index * 30), 
+          body: cuestionarioData,
+          theme: "grid",
+        });
+      });
+
+
+    //Muestras
+      doc.addPage();
+      doc.setFontSize(14);
+      doc.text("MUESTRAS", 10, 10);
+      const muestras = this.estudioData.ficha.muestras;
+      let startY = 20; 
+
+      muestras.forEach((muestra, index) => {
+        const muestraData = [
+          ["Muestra", muestra.titulo],
+          ["Ámbito", muestra.ambito],
+          ["Universo", muestra.universo],
+          ["Sexo", muestra.sexo],
+          ["Edad", muestra.edad],
+          ["Tamaño Real", muestra.tamano_real],
+          ["Tamaño Teórico", muestra.tamano_teorico],
+          ["Afijación", muestra.afijacion],
+          ["Puntos de Muestreo", muestra.puntos_muestreo],
+          ["Error Muestral", muestra.error_muestral],
+          ["Método de Muestreo", muestra.metodo_muestreo],
+        
+      ];
+
+        doc.autoTable({
+          startY: startY, 
+          body: muestraData,
+          theme: "grid",
+        });
+
+        startY = doc.autoTable.previous.finalY + 7; 
+      });
+
+    //Preguntas
+      doc.addPage();
+      doc.setFontSize(14);
+      doc.text("PREGUNTAS", 10, 10);
+
+      const preguntaData = [
+      ["Pregunta", this.preguntaData.ficha.titulo],
+      ["Texto", this.preguntaData.ficha.texto],
+      
+      ];
+
+      doc.autoTable({
+        startY: 20,
+        body: preguntaData,
+        theme: "grid",
+      });
+
+
+        doc.save("Estudios.pdf");
+
+      }
 
 
 }
