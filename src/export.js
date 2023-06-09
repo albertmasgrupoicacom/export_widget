@@ -16,11 +16,7 @@ class ExportDocument {
     this.workbook = new ExcelJS.Workbook();
   }
 
-
-
-
   // EXPORTACIÓN EXCEL
-
   async exportToExcel() {
     const workbook = new ExcelJS.Workbook();
     const ws1 = workbook.addWorksheet('Estudios');
@@ -30,53 +26,53 @@ class ExportDocument {
     columnA.font = { bold: true };
 
     //Estudios
-    const cuestionarioCell = ws1.getCell('A5');
+    const cuestionarioCell = ws1.getCell('A7');
     cuestionarioCell.value = 'ESTUDIOS';
     cuestionarioCell.font = { bold: true };
     cuestionarioCell.alignment = { vertical: 'middle', horizontal: 'center' };
-    ws1.mergeCells('A5:B5');
+    ws1.mergeCells('A7:B7');
 
     for(let i = 1; i <= 26; i++){ 
-      ws1.getCell(5, i).fill = {
+      ws1.getCell(7, i).fill = {
           type: 'pattern',
           pattern:'solid',
           fgColor:{ argb:'FFD3D3D3' }
       };
     }
 
-    ws1.getCell('A6').value = 'Nº Estudio';
-    ws1.getCell('B6').value = this.estudioData.ficha.estudio.id;
+    ws1.getCell('A8').value = 'Nº Estudio';
+    ws1.getCell('B8').value = this.estudioData.ficha.estudio.id;
 
-    ws1.getCell('A7').value = 'Fecha';
-    ws1.getCell('B7').value = this.estudioData.ficha.estudio.fecha;
+    ws1.getCell('A9').value = 'Fecha';
+    ws1.getCell('B9').value = this.estudioData.ficha.estudio.fecha;
 
-    ws1.getCell('A8').value = 'Título';
-    ws1.getCell('B8').value = this.estudioData.ficha.estudio.titulo;
+    ws1.getCell('A10').value = 'Título';
+    ws1.getCell('B10').value = this.estudioData.ficha.estudio.titulo;
 
-    ws1.getCell('A9').value = 'Autor(es)';
-    ws1.getCell('B9').value = this.estudioData.ficha.estudio.autores;
+    ws1.getCell('A11').value = 'Autor(es)';
+    ws1.getCell('B11').value = this.estudioData.ficha.estudio.autores;
 
-    ws1.getCell('A10').value = 'Encargo(es)';
-    ws1.getCell('B10').value = this.estudioData.ficha.estudio.encargo;
+    ws1.getCell('A12').value = 'Encargo(es)';
+    ws1.getCell('B12').value = this.estudioData.ficha.estudio.encargo;
 
-    ws1.getCell('A11').value = 'País';
-    ws1.getCell('B11').value = this.estudioData.ficha.estudio.pais;
+    ws1.getCell('A13').value = 'País';
+    ws1.getCell('B13').value = this.estudioData.ficha.estudio.pais;
 
-    ws1.getCell('A12').value = 'Índice Temático';
-    ws1.getCell('B12').value = this.estudioData.ficha.estudio.indiceTematico;
-    ws1.mergeCells('B12:E12');
-    ws1.getCell('B12').alignment = { wrapText: true, vertical: 'top', horizontal: 'left' };
-    ws1.getRow(12).height = 300;
+    ws1.getCell('A14').value = 'Índice Temático';
+    ws1.getCell('B14').value = this.estudioData.ficha.estudio.indiceTematico;
+    ws1.mergeCells('B14:E14');
+    ws1.getCell('B14').alignment = { wrapText: true, vertical: 'top', horizontal: 'left' };
+    ws1.getRow(14).height = 300;
 
     //Cuestionarios
-    const cuestionarioCell1 = ws1.getCell('A13');
+    const cuestionarioCell1 = ws1.getCell('A15');
     cuestionarioCell1.value = 'CUESTIONARIOS';
     cuestionarioCell1.font = { bold: true };
     cuestionarioCell1.alignment = { vertical: 'middle', horizontal: 'center' };
-    ws1.mergeCells('A13:B13');
+    ws1.mergeCells('A15:B15');
 
     for(let i = 1; i <= 26; i++){ 
-      ws1.getCell(13, i).fill = {
+      ws1.getCell(15, i).fill = {
           type: 'pattern',
           pattern:'solid',
           fgColor:{ argb:'FFD3D3D3' }
@@ -84,7 +80,7 @@ class ExportDocument {
     }
 
     const cuestionarios = this.estudioData.ficha.cuestionarios;
-    let currentRow = 14;
+    let currentRow = 16;
 
     for (let cuestionario of cuestionarios) {
       ws1.getCell(`A${currentRow}`).value = 'Nº Cuestionario';
@@ -121,14 +117,14 @@ class ExportDocument {
 
 
     //Muestras
-    const cuestionarioCell2 = ws1.getCell('A21');
+    const cuestionarioCell2 = ws1.getCell('A23');
     cuestionarioCell2.value = 'MUESTRAS';
     cuestionarioCell2.font = { bold: true };
     cuestionarioCell2.alignment = { vertical: 'middle', horizontal: 'center' };
-    ws1.mergeCells('A21:B21');
+    ws1.mergeCells('A23:B23');
 
     for(let i = 1; i <= 26; i++){ 
-      ws1.getCell(21, i).fill = {
+      ws1.getCell(23, i).fill = {
           type: 'pattern',
           pattern:'solid',
           fgColor:{ argb:'FFD3D3D3' }
@@ -136,7 +132,7 @@ class ExportDocument {
     }
 
     const muestras = this.estudioData.ficha.muestras;
-    let currentRow1 = 22;
+    let currentRow1 = 24;
 
     for (let muestra of muestras) {
       ws1.getCell(`A${currentRow1}`).value = 'Muestra';
@@ -199,73 +195,29 @@ class ExportDocument {
       }
 
     // Preguntas
-      const cuestionarioCell3 = ws1.getCell('A45');
+      const cuestionarioCell3 = ws1.getCell('A47');
       cuestionarioCell3.value = 'PREGUNTAS';
       cuestionarioCell3.font = { bold: true };
       cuestionarioCell3.alignment = { vertical: 'middle', horizontal: 'center' };
-      ws1.mergeCells('A45:B45');
+      ws1.mergeCells('A47:B47');
       
       for(let i = 1; i <= 26; i++){ 
-        ws1.getCell(45, i).fill = {
+        ws1.getCell(47, i).fill = {
             type: 'pattern',
             pattern:'solid',
             fgColor:{ argb:'FFD3D3D3' }
         };
       }
 
-      ws1.getCell('A46').value = 'Pregunta';
-      ws1.getCell('B46').value = this.preguntaData.ficha.titulo;
+      ws1.getCell('A48').value = 'Pregunta';
+      ws1.getCell('B48').value = this.preguntaData.ficha.titulo;
 
-      ws1.getCell('A47').value = 'Texto';
-      ws1.getCell('B47').value = stripHtmlTags(this.preguntaData.ficha.texto); 
-      ws1.mergeCells('B47:E47');
-      ws1.getCell('B47').alignment = { wrapText: true, vertical: 'top', horizontal: 'left' };
-      ws1.getRow(47).height = 300;
+      ws1.getCell('A49').value = 'Texto';
+      ws1.getCell('B49').value = stripHtmlTags(this.preguntaData.ficha.texto); 
+      ws1.mergeCells('B49:E49');
+      ws1.getCell('B49').alignment = { wrapText: true, vertical: 'top', horizontal: 'left' };
+      ws1.getRow(49).height = 300;
 
-
-
-    //Índice de preguntas
-    const cuestionarioCell4 = ws1.getCell('A48');
-    cuestionarioCell4.value = 'ÍNDICE DE PREGUNTAS';
-    cuestionarioCell4.font = { bold: true };
-    cuestionarioCell4.alignment = { vertical: 'middle', horizontal: 'center' };
-    ws1.mergeCells('A48:J48');
-
-    for(let i = 1; i <= 26; i++){ 
-      ws1.getCell(48, i).fill = {
-          type: 'pattern',
-          pattern:'solid',
-          fgColor:{ argb:'FFD3D3D3' }
-      };
-    }
-
-    let currentRow2 = 49;
-
-    ws1.getCell(`A${currentRow2}`).value = 'Código';
-    ws1.getCell(`A${currentRow2}`).font = { bold: true };
-
-    ws1.getCell(`B${currentRow2}`).value = 'Título';
-    ws1.getCell(`B${currentRow2}`).font = { bold: true };
-
-    ws1.mergeCells(`B${currentRow2}:I${currentRow2}`);
-
-    ws1.getCell(`J${currentRow2}`).value = 'Series';
-    ws1.getCell(`J${currentRow2}`).font = { bold: true };
-    currentRow2++;
-
-    for (let pregunta of this.preguntasCuestionarioData.lista) {
-      ws1.getCell(`A${currentRow2}`).value = pregunta.codigo;
-
-      ws1.getCell(`B${currentRow2}`).value = pregunta.titulo;
-      ws1.mergeCells(`B${currentRow2}:I${currentRow2}`);
-
-      for (let serie of pregunta.series) {
-        ws1.getCell(`J${currentRow2}`).value = serie.titulo;
-        currentRow2++;
-      }
-
-      ws1.unMergeCells(`B${currentRow2}:I${currentRow2}`);
-    }
 
     //Logo
     this.addLogoToWorkbook(workbook).then(() => {
@@ -318,7 +270,7 @@ class ExportDocument {
     const ws = workbook.getWorksheet('Estudios');
     ws.addImage(logoId, {
       tl: { col: 0, row: 0 },
-      br: { col: 1, row: 4 },
+      br: { col: 1, row: 6 },
       editAs: 'absolute',
     });
   }
@@ -356,10 +308,6 @@ class ExportDocument {
 
 
 
-
-
-
-
- }
+}
 
 export { ExportDocument };
