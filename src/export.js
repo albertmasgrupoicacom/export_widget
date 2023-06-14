@@ -306,47 +306,58 @@ class ExportDocument {
   }
 
 
-  // EXPORTACIÓN PDF
 
+    // Eliminamos las etiquetas HTML
+    stripHTML(html) {
+      var tmp = document.createElement("DIV");
+      tmp.innerHTML = html;
+      return tmp.textContent || tmp.innerText || "";
+    }
+
+
+      // EXPORTACIÓN PDF
     exportToPDF() {
       const doc = new jsPDF();
 
-    //Logo
-    const logoWidth = 50;  
-    const logoHeight = 50; 
-    const logoX = 10;      
-    const logoY = 10;      
-    //const logoUrl = 'https://i.imgur.com/77syx2k.png';
-    const logoUrl = 'https://upload.wikimedia.org/wikipedia/commons/9/9d/Logotipo_del_CIS.png';
-    //const logoUrl = 'https://webserver-cis-dev.lfr.cloud/documents/d/cis/logo-cis';
-    doc.addImage(logoUrl, 'PNG', logoX, logoY, logoWidth, logoHeight);
+      //Logo
+      const logoWidth = 50;  
+      const logoHeight = 50; 
+      const logoX = 10;      
+      const logoY = 10;      
+      const logoUrl = 'https://upload.wikimedia.org/wikipedia/commons/9/9d/Logotipo_del_CIS.png';
+      doc.addImage(logoUrl, 'PNG', logoX, logoY, logoWidth, logoHeight);
 
-    //Estudios
-    const estudioData = [
-          ["Nº Estudio", this.estudioData.ficha.estudio.id],
-          ["Fecha", this.estudioData.ficha.estudio.fecha],
-          ["Título", this.estudioData.ficha.estudio.titulo],
-          ["Autor(es)", this.estudioData.ficha.estudio.autores],
-          ["Encargo(es)", this.estudioData.ficha.estudio.encargo],
-          ["País", this.estudioData.ficha.estudio.pais],
-          ["Índice Temático", this.estudioData.ficha.estudio.indiceTematico],
+      //Estudios
+      const estudioData = [
+        ["Nº Estudio", this.estudioData.ficha.estudio.id],
+        ["Fecha", this.estudioData.ficha.estudio.fecha],
+        ["Título", this.estudioData.ficha.estudio.titulo],
+        ["Autor(es)", this.estudioData.ficha.estudio.autores],
+        ["Encargo(es)", this.estudioData.ficha.estudio.encargo],
+        ["País", this.estudioData.ficha.estudio.pais],
+        ["Índice Temático", this.estudioData.ficha.estudio.indiceTematico],
       ];
 
       doc.setFontSize(14);
       doc.text("ESTUDIOS", 10, 70);
       doc.autoTable({
-          startY: 80,
-          body: estudioData,
-          theme: "grid",
+        startY: 80,
+        body: estudioData,
+        theme: "grid",
+        didParseCell: function(data) {
+          if (data.section === 'body' && data.column.index === 0) {
+            data.cell.styles.fontStyle = 'bold';
+          }
+        },
       });
 
-    //Cuestionarios
+      //Cuestionarios
       doc.addPage();
       doc.setFontSize(14);
       doc.text("CUESTIONARIOS", 10, 10);
       const cuestionarios = this.estudioData.ficha.cuestionarios;
       cuestionarios.forEach((cuestionario, index) => {
-      const cuestionarioData = [
+        const cuestionarioData = [
           ["Nº Cuestionario", cuestionario.numero],
           ["Título", cuestionario.titulo],
           ["Fecha de inicio", cuestionario.fecha_inicio],
@@ -354,17 +365,22 @@ class ExportDocument {
           ["Tipo de entrevista", cuestionario.tipo_entrevista],
           ["Variables Sociodemográficas", cuestionario.variables_sociodemograficas],
           ["Contenido", cuestionario.contenido]
-      ];
+        ];
 
-      doc.autoTable({
+        doc.autoTable({
           startY: 20 + (index * 30), 
           body: cuestionarioData,
           theme: "grid",
+          theme: "grid",
+          didParseCell: function(data) {
+            if (data.section === 'body' && data.column.index === 0) {
+              data.cell.styles.fontStyle = 'bold';
+            }
+          },
         });
       });
 
-
-    //Muestras
+      //Muestras
       doc.addPage();
       doc.setFontSize(14);
       doc.text("MUESTRAS", 10, 10);
@@ -384,39 +400,46 @@ class ExportDocument {
           ["Puntos de Muestreo", muestra.puntos_muestreo],
           ["Error Muestral", muestra.error_muestral],
           ["Método de Muestreo", muestra.metodo_muestreo],
-        
-      ];
+        ];
 
         doc.autoTable({
           startY: startY, 
           body: muestraData,
           theme: "grid",
-        });
-
-        startY = doc.autoTable.previous.finalY + 7; 
+          didParseCell: function(data) {
+            if (data.section === 'body' && data.column.index === 0) {
+              data.cell.styles.fontStyle = 'bold';
+            }
+          },
       });
+          startY = doc.autoTable.previous.finalY + 7; 
+        }); 
 
-    //Preguntas
+      //Preguntas
       doc.addPage();
       doc.setFontSize(14);
       doc.text("PREGUNTAS", 10, 10);
 
       const preguntaData = [
-      ["Pregunta", this.preguntaData.ficha.titulo],
-      ["Texto", this.preguntaData.ficha.texto],
-      
+        ["Pregunta", this.preguntaData.ficha.titulo],
+        ["Texto", this.stripHTML(this.preguntaData.ficha.texto)],
       ];
 
       doc.autoTable({
         startY: 20,
         body: preguntaData,
         theme: "grid",
+        didParseCell: function(data) {
+          if (data.section === 'body' && data.column.index === 0) {
+            data.cell.styles.fontStyle = 'bold';
+          }
+        },
       });
+    
 
+      doc.save("FichaDeEstudios.pdf");
 
-        doc.save("Estudios.pdf");
-
-      }
+    } 
 
 
 }
